@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body class="index-page">
+
+  <!-- Sidebar -->
+  <header id="sidebar">
+    <h1>Anurag's Blog</h1>
+    <a href="index.html">Home</a>
+    <a href="create.html">Create Post</a>
+    <a href="#">Manage Post</a>
+    <a href="https://www.linkedin.com/in/anurag-maurya-nsut/?">About</a>
+    <a href="#">Contact</a>
+    <a class="sidebar-login" href="singup.html"><i class=" fa-solid fa-user " style="margin-right: 10px ;" > </i>    Sign up / Sign in </a>
+  </header>
+
+  <!-- Toggle Button -->
+  <button id="toggle-btn">☰</button>
+
+  <!-- Main Blog Content -->
+  <main>
+    <div class="post">
+      <h2><a href="#">Amazon Clone Project</a></h2>
+      <p>Category: Web Development | Tags: HTML, CSS, Frontend</p>
+      <br>
+      <p>This is my first project where I created an Amazon clone using only HTML and CSS. The website replicates the basic layout and product listing functionality of Amazon, helping me practice my frontend skills.</p>
+      <br>
+      <img src="img/amazone-clone.png">
+      <br>
+    
+      <a href="https://amzonclone-inky.vercel.app/" class="post-link" target="_blank">View Project</a>
+
+    </div>
+
+    <div class="post">
+      <h2><a href="#">Second Blog Post</a></h2>
+      <p>Curabitur suscipit, ligula nec tincidunt lacinia, ex nisi volutpat odio, ac tempor elit leo at augue.</p>
+    </div>
+
+    <div class="post">
+      <h2><a href="#">Third Blog Post</a></h2>
+      <p>Aliquam erat volutpat. Sed in orci at metus luctus posuere sit amet nec nulla.</p>
+    </div>
+  </main>
+
+  <script>
+   
+    const sidebar = document.getElementById("sidebar");
+    const toggleBtn = document.getElementById("toggle-btn");
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
